@@ -1,0 +1,18 @@
+.alerta{
+    padding: 1rem;
+    color: $blanco;
+    text-align: center;
+    font-weight: $bold;
+    margin: 1rem 0;
+    text-transform: uppercase;
+
+    
+    &.error{
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ed452f+0,ed3d2d+50,f73827+51,ff8989+100&0.27+0,0.82+50,0.39+100 */
+background: -moz-linear-gradient(-45deg,  rgba(237,69,47,0.27) 0%, rgba(237,61,45,0.82) 50%, rgba(247,56,39,0.81) 51%, rgba(255,137,137,0.39) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(237,69,47,0.27) 0%,rgba(237,61,45,0.82) 50%,rgba(247,56,39,0.81) 51%,rgba(255,137,137,0.39) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(237,69,47,0.27) 0%,rgba(237,61,45,0.82) 50%,rgba(247,56,39,0.81) 51%,rgba(255,137,137,0.39) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45ed452f', endColorstr='#63ff8989',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    }
+}
