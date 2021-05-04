@@ -15,4 +15,30 @@ background: linear-gradient(135deg,  rgba(237,69,47,0.27) 0%,rgba(237,61,45,0.82
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45ed452f', endColorstr='#63ff8989',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
     }
+    &.exito{
+        background-color: $verde;
+    }
 }
+ table.propiedades{
+    margin-top: 4rem;
+     text-align: center;
+     
+     width: 100%;
+     border-spacing: 0;
+     thead{
+        background-color: $verde;
+
+        th{
+            padding: 2rem;
+            color: $blanco;
+         }
+     }
+     .imagen-tabla{
+         width: 10rem;
+     }
+     
+ }
+ .imagen-small{
+     width: 20rem;
+ }
+ 

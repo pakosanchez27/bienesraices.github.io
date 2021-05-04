@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     eventListeners();
     darkMode();
+    
 });
 
 function darkMode() {
@@ -44,3 +45,5 @@ function navegacionResponcive() {
         navegacion.classList.add('mostrar');
     }
 }
+
+
