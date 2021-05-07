@@ -14,7 +14,7 @@ incluirTemplete('header');
     
             
             <?php 
-            $limite = 6;
+            $limite = 10;
             include 'includes/templetes/anuncios.php';
         ?>
 

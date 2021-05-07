@@ -1,12 +1,25 @@
 <?php
+require '../includes/funciones.php'; 
+$auth = estaAutenticado();
+ 
+
+if (!$auth) {
+
+
+    header('Location: /');
+}
+
+
 
 // importar la conexion 
 require '../includes/config/databases.php';
+
 
 $db = conectarDB();
 
 // Escribir el Query 
 $query = "SELECT * FROM propiedades";
+
 
 //Consultar db 
 $resultadoConsulta = mysqli_query($db, $query);
@@ -37,7 +50,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 }
 
-require '../includes/funciones.php'; 
+
 
 incluirTemplete('header');
 

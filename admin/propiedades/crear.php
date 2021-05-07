@@ -1,4 +1,16 @@
 <?php
+require '../../includes/funciones.php'; 
+$auth = estaAutenticado();
+ 
+
+if (!$auth) {
+
+
+    header('Location: /');
+}
+
+
+
 //base de datos 
 
 require '../../includes/config/databases.php';
@@ -47,7 +59,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     if(!$precio){
         $errores[] = "Debes Añadir precio";
     }
-    if($descripcion <= 50){
+    if(strlen( $descripcion ) < 50 ){
         $errores[] = "La descripcion debe de coneter almenos 50 caracteres";
     }
     if(!$habitaciones){
@@ -115,7 +127,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 
 
-require '../../includes/funciones.php'; 
+
 
 
 incluirTemplete('header');
